@@ -1,0 +1,23 @@
+html {
+    font-size: 16px;
+    font-family: "Raleway";
+  }
+  
+  *,
+  *:before,
+  *:after {
+
+            box-sizing: inherit;
+  }
+
+  #content{
+    
+  }
+
+  #btn-reload{
+     display: none;
+  }
+
+  #gagner{
+    display: none;
+  }

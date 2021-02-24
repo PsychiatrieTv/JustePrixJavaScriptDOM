@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-indigo-400 p-48 text-center  ">
+    <div class="border-8 border-indigo-600 rounded-l-lg inline-block h-96 w-3/4 z-96 shadow-2xl">
+        <h1 class="p-2 m-2 text-4xl font-black text-indigo-500 text-center">Le Juste Prix de la banane</h1>        
+            <h2 class="text-5xl font-black text-indigo-500" id="chrono"></h2>
+            <p class="text-2xl font-black text-indigo-500" id="gagner"></p>
+            <button id="go" onclick="start()" class="text-2xl font-black p-4 my-2 bg-indigo-500 text-white rounded-md focus:outline-none focus:ring-2 ring-indigo-400 ring-offset-2">GO !!</button> 
+            <button id="btn-reload"  type="button" class="text-2xl font-black p-4 my-2 bg-indigo-500 text-white rounded-md focus:outline-none focus:ring-2 ring-indigo-400 ring-offset-2" onclick=" reload()">Reload</button>  
+            <p id="plusoumoin" class="font-black "></p> 
+            <form id="content"  action="#" method="POST">                
+                <div class="">
+                    <input id="prix" type="number" placeholder="Prix" class=" placeholder-indigo-300 border border-indigo-300 p-2 my-2 rounded-md focus:outline-none focus:ring-2 ring-indigo-200">
+                    <button id="btn"  type="button" class="text-1xl font-black p-2 my-2 bg-indigo-500 text-white rounded-md focus:outline-none focus:ring-2 ring-indigo-400 ring-offset-2" onclick="getValue()">Ok</button>        
+                          
+                     <p id="prenom" class="font-black"></p>
+             </form>    
+           
+            
+           
+                   
+            
+    </div>         
+
+    
+    <script src="index.js" defer></script>
+    
+</body>
+</html>
